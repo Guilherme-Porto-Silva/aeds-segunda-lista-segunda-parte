@@ -1,0 +1,21 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby,
+  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
+  Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main(void)
+{
+	char tabela[5][100], verificado[100];
+	printf("Ao fornecer os nomes dos alunos, lembre-se de entrar um caractere de quebra de linha ao fim de cada nome.\n");
+	fgets(tabela, stdin);
+	printf("\nQual nome voce quer ver se esta na lista?\n");
+	fgets(verificado, stdin);
+	if(strcmp(tabela, verificado) == 0) printf("\nTah sim, man, achei aqui.");
+	else printf("\nVish, eh tah nao...");
+	return 0;
+}

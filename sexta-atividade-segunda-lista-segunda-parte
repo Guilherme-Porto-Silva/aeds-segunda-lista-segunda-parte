@@ -1,0 +1,20 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby,
+  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
+  Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main(void)
+{
+	char palavra[50];
+	int i;
+	printf("Digite uma palavra que tenha, no maximo, 50 caracteres\n");
+	fgets(palavra, stdin);
+	for(i=0; i<50; i++) palavra[i]++;
+	fputs(palavra, sizeof(50), stdout);
+	return 0;
+}

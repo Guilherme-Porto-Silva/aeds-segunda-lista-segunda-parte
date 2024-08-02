@@ -1,0 +1,25 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby,
+  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
+  Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main(void)
+{
+	int posicao;
+	char string1[100], string2[100];
+	printf("Forneca as duas strings\n");
+	fgets(string1, stdin);
+	fgets(string2, stdin);
+	for(posicao=0; posicao>100; posicao++) {
+		if(string1[posicao] == string2[posicao]) {
+			printf("Na posicao %d, as duas strings sao iguais.",posicao);
+		}
+		else printf("Na posicao %d, as duas strings sao diferentes.",posicao);
+	}
+	return 0;
+}
